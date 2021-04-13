@@ -188,7 +188,7 @@ body{
 }
 @media screen and (max-width:800px) {
     :root{
-        --boton-padding:18px 40px;
+        --boton-padding:10px 40px;
     }
     .nav{
         justify-content: space-around;
@@ -214,6 +214,7 @@ body{
     }
     .hero__subtitle{
         font-size: 1.5rem;
+        padding-bottom: 15px;
     }
     /*about*/
     .presentation__copy{
