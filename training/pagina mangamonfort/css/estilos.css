@@ -33,7 +33,7 @@ body{
 .hero__title{
     color: white;
     font-size: 3.2rem;
-    margin-bottom: 250px;
+    
 }
 .hero .container{
     padding: 0;
@@ -232,15 +232,19 @@ body{
 /*responsive design*/
 @media screen and (max-width:900px) {
     .nav{
+         flex-wrap: wrap;
         justify-content: space-around;
+        margin-top: 10px;
+        
     }
     .nav__items--cta{
         border: none;
     }
    .nav__items{
-       font-weight: 400;
-       border-bottom: 1px solid white;
-       margin-right: 0;
+    padding: 5px 5px;
+    border: 0;
+    font-weight: 400;
+       
    }
    .nav__items--footer{
        border:none
@@ -322,8 +326,8 @@ body{
         
     }
     .nav__items{
-        padding: 8px 10px;
-        border:0
+            padding: 5px 10px;
+            border: 0;
     }
     .hero__texts{
         text-align: center;
