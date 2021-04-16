@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(131, 84, 84)
+}
+:root{
+    --background:linear-gradient(135deg,#8b909e7e 0%,#8f4b4b98 100%);
+    --color-primary:#eaebec;
+    --color-secondary:rgb(131, 84, 84);
+    --color-gray: rgb(83, 82, 85);
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+}
+.subtitle{
+    color:var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+.hero{
+    background-image: var(--background),url(../assets/Maga\ Monfort_Festival\ COBAV_13-mar-2021_6.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+.hero__title{
+    color: white;
+    font-size: 3.2rem;
+    margin-bottom: 250px;
+}
+.hero .container{
+    padding: 0;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+    font-weight: 700;
+}
+.nav--footer{
+    font-weight: 300;
+    justify-content: flex-start;
+}
+.nav__items{
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+.nav__items--footer{
+    padding: 10px;
+}
+.nav__items--cta{
+    border: 1px solid white;
+}
+.hero__container{
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: white;
+}
+.hero__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+.hero__texts{
+    width: 80%;
+    margin-bottom: 50px;
+}
+/*about*/
+.presentation{
+    text-align: center;
+    padding-top: 0;
+
+}
+.presentation__picture{
+    width: 170px;
+    height: 170px;
+   margin-bottom: 10px;
+   object-fit: cover;
+   object-position: top;
+}
+.presentation__copy{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+}
+.about__img{
+    text-align: center;
+}
+.about__img--left{
+    text-align: left;
+}
+.about__picture{
+    max-width: 80%;
+}
+.about__paragraph{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: white;
+    font-size: 1.1rem;
+}
+/*proyects*/
+
+
+.projects__grid{
+    display: grid;
+    height: 550px;
+    grid-template-areas:
+     "img1 img1 img2 img3"
+     "img1 img1 img4 img5";
+     gap: 10px;
+}
+.projects__item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.projects__item:nth-of-type(1){
+    grid-area: img1;
+}
+.projects__item:nth-of-type(2){
+    grid-area: img2;
+}
+.projects__item:nth-of-type(3){
+    grid-area: img3;
+}
+.projects__item:nth-of-type(4){
+    grid-area: img4;
+}
+.projects__item:nth-of-type(5){
+    grid-area: img5;
+}
+.projects__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.integrantes__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.integrantes__grid{
+    display: grid;
+    height: 550px;
+    width: auto;
+    grid-template-areas: 
+    "img1 img1 img1 img1"
+    "img2 img2 img2 img2"
+    "img3 img3 img3 img3";
+    gap: 10px;
+}
+.integrantes__paragraph{
+    color: white;
+    font-weight: 400;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.footer{
+    background: var(--color-gray);
+}
+.footer__grid{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+.footer__title{
+    font-weight: 400;
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.footer__icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer__container-icons{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: white;
+    text-align: center;
+    border:1px solid white;
+    border-radius: 50%;
+}
+.footer__icon{
+    color: inherit;
+    font-size: 30px;
+    text-decoration: none;
+    line-height: 60px;
+}
+.fab.footer__icon{
+    line-height: 60px;
+}
+.far.footer__icon{
+    line-height: 60px;
+}
+/*responsive design*/
+@media screen and (max-width:900px) {
+    .nav{
+        justify-content: space-around;
+    }
+    .nav__items--cta{
+        border: none;
+    }
+   .nav__items{
+       font-weight: 400;
+       border-bottom: 1px solid white;
+       margin-right: 0;
+   }
+   .nav__items--footer{
+       border:none
+   }
+   /*hero*/
+   .hero__texts{
+       width: 100%;
+       margin-bottom: 80px;
+   }
+   .hero__title{
+       font-size: 2.5rem;
+   }
+   /*about*/
+   .presentation__copy{
+       width: 100%;
+   }
+   .about{
+       grid-template-columns: 1fr;
+   }
+   .about.container{
+       padding-top: 30px;
+   }
+   .about__img--left{
+       text-align: center;
+   }
+   .about__texts:last-child{
+    grid-row: 3/4;
+   }
+   /*contenido*/
+   .projects__grid{
+       grid-template-areas: 
+       "img1 img1 img2 img2"
+       "img1 img1 img3 img3"
+       "img4 img4 img5 img5"
+       ;
+   }
+   .integrantes__grid{
+       grid-template-areas: 
+       "img1"
+       "img2"
+       "img3";
+        height: auto;
+        grid-template-rows: repeat(3,600px);
+        grid-auto-rows: 550px;
+        gap: 180px;
+        width: auto;
+   }
+
+   .integrantes__img{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    align-items: center;
+   }
+    #img{
+       object-position:right;
+
+    }
+       
+       
+   
+   .footer__grid{
+       grid-template-columns: 1fr;
+   }
+   .footer__contact{
+       grid-row: 1/2;
+   }
+
+
+}
+@media screen and (max-width:500px) {
+    .nav{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+    .hero__title{
+        margin-top: 160px;
+        
+    }
+    .nav__items{
+        padding: 8px 10px;
+        border:0
+    }
+    .hero__texts{
+        text-align: center;
+        
+    }
+    .hero__title{
+        font-size: 2rem;
+    }
+    /*about*/
+    .presentation__picture{
+        width: 120px;
+        height: 120px;
+    }
+    .about{
+        row-gap: 60px;
+    }
+    .about.container{
+        padding-top: 10px;
+    }
+    .projects__grid{
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5";
+        height: auto;
+        grid-template-rows: repeat(5,250px);
+        grid-auto-rows: 250px;
+        gap: 10px;
+    }
+}
