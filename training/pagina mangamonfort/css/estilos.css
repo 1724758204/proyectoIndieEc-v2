@@ -246,6 +246,9 @@ body{
     font-weight: 400;
        
    }
+   #chords{
+       margin-right: 60px;
+   }
    .nav__items--footer{
        border:none
    }
@@ -320,6 +323,17 @@ body{
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin-top: 10px;
+        margin-left: 20px;
+        
+    }
+    #contenido{
+        margin-right: 10px;
+    }
+    #chords{
+        margin-right: 64px;
+    }
+    #presentacion{
+        margin-right: 40px;
     }
     .hero__title{
         margin-top: 160px;
