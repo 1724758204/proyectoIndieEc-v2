@@ -6,8 +6,3 @@
     color: floralwhite;
     text-align: center;
 }
-@media screen and (max-width:350px) {
-    #subtitle{
-        margin-left: 43px;
-    }
-}
